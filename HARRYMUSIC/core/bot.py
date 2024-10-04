@@ -143,7 +143,7 @@ class HARRYBot(Client):
         # Check if bot is an admin in the logger group
         if config.LOG_GROUP_ID:
             try:
-               chat_member_info = await self.get_chat_member(
+                chat_member_info = await self.get_chat_member(
                     config.LOG_GROUP_ID, self.id
                 )
                 if chat_member_info.status != ChatMemberStatus.ADMINISTRATOR:
